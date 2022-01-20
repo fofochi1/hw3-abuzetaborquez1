@@ -42,7 +42,7 @@ def outputIntoFile(listsOfString):
         f.close()
         print(csvString)
 
-outputIntoFile(['hello how are you', 'nice to meet you'])
+#outputIntoFile(['hello how are you', 'nice to meet you'])
 
 #problem 5
 def changeCSV(fileName):
@@ -50,6 +50,17 @@ def changeCSV(fileName):
     lines = f.readlines()
     print(lines)
 
-changeCSV('csvFile.txt')
+#changeCSV('csvFile.txt')
 
 #problem 6
+def catchZero(num1, num2):
+    try:
+        num1/num2
+    except ZeroDivisionError:
+        print('Cannot divide by zero')
+
+#catchZero(3,0)
+
+#problem 7
+def removeDuplicates(list):
+    
